@@ -1,0 +1,672 @@
+@font-face {
+  font-family: "Inter";
+  src: url("public/fonts/Inter.ttf");
+}
+
+@font-face {
+  font-family: "Golos";
+  src: url("public/fonts/Golos.ttf")
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 29.4px;
+  font-family: 'Inter';
+  text-transform: uppercase;
+  color: #21222E;
+  letter-spacing: -4%;
+}
+
+* {
+  font-family: "Golos";
+}
+
+.events_content_block {
+  display: flex; 
+  overflow-x: scroll; 
+  align-items: center; 
+  width: 100%;   
+  gap: 0 12px;
+}
+
+.events_wrapper {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  gap: 24px 0;
+  border-radius: 12px;
+  background-color: #ffffff; 
+  height: 371px;
+}
+
+.events_title_block {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-end; 
+  width: 100%; 
+  height: 84px; 
+  padding: 0 20px 0 20px;
+}
+
+.pagination_block {
+  display: none; 
+  align-items: center;
+  gap: 2px; 
+  width: 162px;
+  height: 40px;
+}
+
+.pagination_block > div {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 999px;
+  width: 80px;
+  height: 40px;
+  background: #EFF1F4;
+}
+
+.interesting_block_p {
+  width: 100%; 
+  font-weight: 400; 
+  font-size: 16px;
+  color: #21222E;
+  line-height: 19.2px;
+  letter-spacing: -2%;
+}
+
+.wrapper {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%; 
+  min-height: 100vh; 
+  font-weight: 900; 
+  background: #EFF1F4;
+}
+
+.wrapper > div {
+  display: flex; 
+  flex-direction: column; 
+  width: 100%; 
+  padding: 0 12px 0 12px;
+}
+
+.events_list_p {
+  font-weight: 400; 
+  color: #ffffff; 
+  font-size: 10px;
+}
+
+.events_list_h {
+  font-weight: 500; 
+  line-height: 16.8px;
+  color: #ffffff; 
+  font-size: 14px;
+}
+
+.events_block {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  min-width: 261px;
+  border-radius: 8px;
+  padding: 16px;
+  height: 270px;
+}
+
+.events_block_text {
+  width: 100%;
+  height: 34px;
+}
+
+.events_block_internal {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  gap: 32px;
+}
+
+.events_block_tag {
+  display: flex; 
+  align-items: center; 
+  gap: 1px;
+}
+
+.events_block_tag_internal {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 8px 0px 8px 0px;
+  border-radius: 65px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.join_btn {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  gap: 10px;
+  background-color: #ffffff; 
+  cursor: pointer; 
+  height: 48px;  
+  border-radius: 12px;
+}
+
+.join_btn p {
+  font-weight: 400; 
+  color: #000000; 
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: -2%;
+}
+
+.all_events_block {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  background-color: #ffffff; 
+  margin-bottom: 40px;
+  margin-top: 12px;
+  height: 56px;
+  border-radius: 12px;
+}
+
+.all_events_block p {
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: -2%;
+  color: #21222E;
+  font-weight: 400;
+}
+
+.student_life_block {
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+  padding: 20px;
+  gap: 20px 0px;
+  border-radius: 20px;
+}
+
+.student_life_block_slider {
+  display: flex; 
+  overflow-x: scroll; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  height: 138px;
+  gap: 12px;
+}
+
+.student_life_block_internal {
+  display: flex; 
+  flex-direction: column; 
+  height: 138px;
+  gap: 20px 0;
+  min-width: 261px;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.student_life_block_internal div {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.student_life_block_internal div > img {
+  width: 40px;
+  height: 40px;
+}
+
+.student_life_block div > a {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 9999px; 
+  background: #EFF1F4;
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+}
+
+.student_life_block_internal p {
+  font-weight: 400; 
+  font-size: 16px;
+  letter-spacing: -2%;
+  line-height: 19.2px;
+  color: #21222E;
+}
+
+.familiarity_block {
+  display: flex; 
+  position: relative; 
+  padding-bottom: 0; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.familiarity_block_list {
+  display: flex; 
+  flex-direction: column; 
+  width: 100%; 
+  height: 222px;
+  gap: 24px 0;
+}
+
+.familiarity_block_list_link {
+  font-weight: 400; 
+  text-decoration: underline; 
+  text-underline-offset: 2px; 
+  line-height: 16.8px;
+  font-size: 14px;
+  letter-spacing: -2%;
+  cursor: pointer;
+  color: #0047BA;
+}
+
+.familiarity_block_img_desktop {
+  display: none; 
+  position: relative; 
+  top: 0; 
+  right: 3rem; 
+  width: 402px;
+  height: 413px;
+}
+
+.familiarity_block_img_mobile {
+  display: block; 
+  position: relative; 
+  top: -1rem; 
+  width: 210px;
+  align-self: flex-end;
+  height: 214px;
+}
+
+.celebration_years_block {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+  border-radius: 20px;
+  gap: 40px 0;
+  height: 100%; 
+  background-position: bottom; 
+  background-repeat: no-repeat; 
+  background-image: url("/images/55_years_kgeu.png");
+  padding: 20px;
+}
+
+.celebration_years_block h2 {
+  font-weight: 900; 
+  color: #ffffff; 
+  text-transform: uppercase; 
+  font-size: 42px;
+  width: 319px;
+  height: 132px;
+  line-height: 44px;
+}
+
+.celebration_years_block_sub {
+  display: flex; 
+  flex-direction: column; 
+  width: 319px;
+  gap: 20px 0;
+}
+
+.celebration_years_block_sub_header {
+  font-weight: 500;
+  height: 154px;
+  font-size: 20px;
+  line-height: 22px;
+  color: white;
+  letter-spacing: -2%;
+}
+
+.celebration_years_block_sub_internal {
+  display: flex; 
+  flex-direction: column; 
+  height: 240px;
+  gap: 20px 0;
+}
+
+.celebration_years_block_sub_internal p {
+  font-weight: 400; 
+  color: #ffffff; 
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: -2%;
+}
+
+.interesting_block {
+  display: flex; 
+  overflow: hidden; 
+  flex-direction: column; 
+  width: 100%; 
+  overflow: hidden;
+  height: 100%; 
+  margin: 12px 0;
+  gap: 40px 0;
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.slider {
+  display: flex; 
+  overflow-x: scroll; 
+  align-items: center; 
+  min-height: 136px;
+  gap: 12px;
+}
+
+.slider_internal {
+  display: flex; 
+  flex-direction: column; 
+  min-width: 261px;
+  min-height: 150px;
+  height: 100%; 
+  border-radius: 20px;
+  gap: 32px;
+  padding: 20px;
+}
+
+.slider_internal div {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.slider_internal div > img {
+  width: 40px;
+  height: 40px;
+}
+
+
+.slider_internal a {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 9999px; 
+  background-color: #ffffff; 
+  width: 30px;
+  border-radius: 9999px;
+  height: 30px;  
+}
+
+.tag_first {
+  width: 101px;
+}
+
+.tag_second {
+  width: 45px;
+}
+
+.tag_third {
+  width: 69px;
+}
+
+.tag_fourth {
+  width: 105px;
+}
+
+.tag_fifth {
+  width: 64px;
+}
+
+@media (min-width: 1280px) { 
+  .events_block_first {
+    width: 83px;
+    height: 40px;
+  }
+
+  .events_block_second {
+    width: 59px;
+    height: 40px;
+  }
+
+  .events_block_third {
+    width: 137px;
+    height: 40px;
+  }
+
+  .all_events_block {
+    height: 92px;
+    border-radius: 20px;
+  }
+
+  .all_events_block p {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .student_life_block {
+    padding: 70px;
+    gap: 46px 0;
+  }
+
+  .student_life_block_internal {
+    width: 100%;
+    gap: 33px 0;
+    height: 186px;
+    border-radius: 20px;
+    padding: 32px;
+  }
+
+  .student_life_block_internal p {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .student_life_block div > a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .student_life_block_slider {
+    overflow-x: hidden; 
+    height: 100%; 
+  }
+
+  .familiarity_block {
+    flex-direction: row; 
+    height: 515px;
+    padding: 70px;
+  }
+  
+  .familiarity_block_list {
+    width: 378px;
+    height: 304px;
+    gap: 20px 0;
+  }
+  
+  .familiarity_block_list_link {
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+
+  .familiarity_block_img_desktop {
+    display: block;
+  }
+
+  .familiarity_block_img_mobile {
+    display: none;
+  }
+
+  .celebration_years_block {
+    flex-direction: row; 
+    height: 742px;
+    padding: 70px;
+  }
+
+  .celebration_years_block h2 {
+    font-size: 88px;
+    width: 508px;
+    line-height: 83.6px;
+    height: 252px;
+  }
+
+  .celebration_years_block_sub {
+    height: 486px;
+    gap: 56px 0;
+    width: 625px;
+  }
+  .celebration_years_block_sub_header {
+    height: 190px; 
+    line-height: 38.4px;
+    font-size: 30px;
+  }
+  
+  .celebration_years_block_sub_internal {
+    width: 546px;
+    gap: 40px 0;
+  }
+
+  .celebration_years_block_sub_internal p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .interesting_block {
+    height: 498px;
+    padding: 70px;
+  }
+
+  h3 {
+    line-height: 84px;
+    font-size: 80px;
+  }
+
+  .events_content_block {
+    overflow-x: hidden; 
+  }
+  
+  .slider {
+    overflow: hidden; 
+  }
+
+  .slider_internal {
+    width: 100%; 
+    padding: 32px;
+    height: 204px;
+    min-width: 261px;
+    min-height: 150px;
+  }
+
+  .slider_internal div > img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .slider_internal p {
+    width: 50%; 
+    line-height: 21.6px;
+    font-size: 18px;
+  }
+
+  .slider_internal a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .join_btn {
+    height: 60px;
+  }
+
+  .join_btn p {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .events_block {
+    padding: 32px;
+    width: 499px;
+    height: 515px;
+    border-radius: 20px;
+  }
+  
+  .wrapper > div {
+    padding-left: 0;
+    padding-right: 0; 
+    width: 1656px;
+  }
+
+  .events_block_tag_internal {
+    width: 132px;
+    height: 40px;
+    padding: 16px 0px 16px 0px;
+  }
+
+  .events_wrapper {
+    height: 795px;
+    gap: 56px 0;
+    padding: 70px;
+    border-radius: 20px;
+    padding: 70px;
+  }
+
+  .events_list_p {
+    font-size: 15px;
+  }
+
+  .events_block_text {
+    height: 152px;
+  }
+
+  .interesting_block_p {
+    width: 50%; 
+    line-height: 21.6px;
+    font-size: 18px;
+  }
+
+  .events_list_h {
+    line-height: 38.4px;
+    font-size: 32px;
+  }
+
+  .tag_first {
+    width: 132px;
+  }
+
+  .tag_second {
+    width: 59px;
+  }
+
+  .tag_third {
+    width: 80px;
+  }
+
+  .tag_fourth {
+    width: 137px;
+  }  
+
+  .tag_fifth {
+    width: 83px;
+  }
+  
+  .pagination_block {
+    display: flex; 
+  }
+
+  .events_title_block {
+    padding-left: 0;
+    padding-right: 0; 
+  }
+}
